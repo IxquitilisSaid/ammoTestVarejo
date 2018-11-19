@@ -1,0 +1,88 @@
+- Name: Jaime Alves Marinho de Oliveira;
+- Applying to the position of: FullStack Dev;
+- Contact:
+  E-mail: jaime.amo18@gmail.com;
+  Phone: 84 999366561;
+  GitHub: https://github.com/IxquitilisSaid;
+
+
+*INTRODUCTION TO THE CANDIDATE*
+
+  Hello and good afternoon! My name is Jaime Oliveira. 
+  Currently I'm a FrontEnd dev but I consider myself a passionate generalist (or FullStack, if you will).
+
+  (What are my strong points) ->
+    
+    - Passionate about work, developing, learning new skills and teaching;
+    - Self-taught;
+    - Good work ethics;
+    - Goal oriented;
+    - Flexible regarding due dates and increases to production requirements;
+    - Good verbal and written skills;
+    - Keen on teamwork;
+    - SCRUM adept;
+
+
+  (What are my weak points) ->
+
+    - Tend to "tunnle vision" on harder problems;
+    - Too critical of my own work;
+    - Inclination to try and help everyone or solve every problem;
+    
+
+  (What's my current stack) -> 
+    
+    - Python (
+      - Django
+    );
+    - JavaScript (
+      - Angular
+      - React
+      - ReactNative
+      - Phaser
+    );
+    - PHP (
+      - Joomla
+      - WordPress
+    );
+    - Ruby (
+      - Rails
+    );
+
+
+*INTRODUCTION TO THE CODE*
+
+  (Thoughts on the purposed stack) ->
+
+    I was thrilled by the combo of React and TypeScript!
+    Since I have worked with Angular, two-way data binding seems always seems to be a pitfall of bad practices.
+    React works with a one-way data binding flow, so mixing that with TypeScript's strong typed method, it's a match made in heaven!
+
+
+  (Thought process) ->
+
+    Recently I went to ReactCon and talking with some of the attendees, the buzzwords that was being thrown around (aside from Hooks) 
+    was "Single Point of Truth". Basically trying to manage State and Conditional Rendering inside I file.
+    Which leads me to how I built this app.
+
+  
+  (Component driven design) ->
+
+    The bread and butter of React (or Angular). 
+    While some best practices related to that approach may be "ignored" in smaller projects I believe that for AMMO, a large company,
+    it's the best approach to build swappable, maintainable and reusable code.
+
+  
+  
+*CLOSING STATEMENTS*
+
+  I'm really grateful for this opportunity, though it was a short project, I did have a lot of fun building it.
+  I look forward to our next meeting where, hopefully, I get to explain what I did and understand a bit more about the company's culture.
+
+  Best regards,
+
+  Jaime Oliveira
+
+  
+
+

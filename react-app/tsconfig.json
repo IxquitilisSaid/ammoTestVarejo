@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // enables relative imports to root
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ]
+    },
+    "outDir": "out/",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

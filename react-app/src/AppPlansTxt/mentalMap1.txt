@@ -1,0 +1,74 @@
+OBJECTIVES ->
+
+  1. SPA with Interactive -> 
+    1.1 SearchField
+    1.2 Pagination
+    1.3 ItemsPerPage
+  
+  2. Using Node / TypeScript / React
+
+
+LAYOUT MAP ->
+
+  1. Header ->
+    1.1 Logo (STATIC)
+    1.2 SearchField (PASSES STATE)
+  
+  2. SubHeader ->
+    2.1 Search Name => Init state = Product List
+      2.1.1 Search Name (Gets state from SearchField)
+  
+  3. Body ->
+    3.1 Num of found Products (Show state init false)
+      3.1.1 On show return num of occurrences
+    3.2 Product Cards
+      3.2.1 Fetch img from Product.nameProduct.imgUrl
+      3.2.2 Fetch name from Product.nameProduct
+      3.2.3 Fetch price from Product.nameProduct.price
+    3.3 Products per Page
+      3.3.1 Dropdown (Reduce/Add showNumProducts)
+    3.4 Pagination
+      3.4.1 Buttons (Reduce/Add numProducts)
+
+THE STATES ->
+
+  SubHeader -> 
+    InitState(headerName) = Product List
+    headerName = SearchField Query
+  
+  ProductsFound -> 
+    InitState {
+      numFound: null,
+      showNumFound: false
+    }
+    numFound = map of occurrences(SearchQuery)
+    showNumFound = event SearchField submit
+  
+  Cards/Card ->
+    InitState {
+      showCard: false,
+      numCards: null,
+      productName: '',
+      productImgUrl: [],
+      productPrice: null
+    }
+    showCard = (fetchResult !== error)
+    numCards = map of occurrences(SearchQuery)
+    productName = fetch(Product.nameProduct)
+    productImgUrl = fetch(Product.nameProduct.imgUrl)
+    productPrice = fetch(Product.nameProduct.price)
+
+  Dropdown ->
+    InitState {
+      numPostPage: [1, 3, 5, 10],
+      showDropDown: false
+    }
+    showDropDown = (fetchResult !== error)
+  
+  Pagination ->
+    InitState {
+      numOfCrumbs: [1],
+      showPagination: false
+    }
+    showPagination = (fetchResult !== error)
+    numOfCrumbs = (int map of occurrences(SearchQuery) / numPostPage)

@@ -1,0 +1,70 @@
+*HEADER* (actually it's just the searchfield)
+
+- Searchfield -> 
+  - Logo (static);
+  - Input box (stateful);
+    - Initial State set in App as ('');
+    - Added method "onSearchChange"; 
+      - state = setState(value of the binded target);
+
+- Subheader ->
+  - Text (stateful);
+    - Initial State set in App as 'Lista de Produtos';
+    - Added method "onSearchSubmit";
+      - state = setState(value of onSearchChange());
+
+
+*BODY*
+
+
+- Found Entries ->
+  - String interpolation (static) + Number (dynamic);
+    - Initial State / All States set by searchQuery.val;
+      * OR I can set it's state as "Sorry no products found";
+
+- ProductsList ->
+  - Just passing props to children;
+  - Also added an internal scroll-Y. Doesn't look that good;
+
+- ProductsWrapper ->
+  - Imports the interface from App;
+    - Interface refers to child of ProductsWrapper, the Product;
+  - Maps array of products for individual keys (best practice);
+  - Return child (Product) with interfaced props;
+
+- Product -> 
+  - Consumes App's IProduct interface for stateless props;
+  - Images (passed props);
+    - Don't need a state since an err would just load a fallback;
+  - Product name (passed props);
+    - Won't handle duplicates for now;
+  - Product Esp Name (passed props);
+    - I checked the site, it's Brand & Size & Colour;
+      - I'll just make a dummy entry, sorry.
+  - Product Price (passed props);
+    - I should handle discounts, maybe if I finish early;
+
+
+*FOOTER*
+
+
+- Dropdown -> 
+  - Initial state set in App as 1;
+    - I chose 1 because the DB isn't as big and I wanna test the seed;
+  - Will add a method "onDisplayNumChange";
+    - WORK IN PROGRESS
+    - WORK IN PROGRESS
+    - WORK IN PROGRESS
+    - WORK IN PROGRESS
+    - WORK IN PROGRESS
+
+- Pagination ->
+  - Initial state set in App as null;
+    - Will add a method "onPaginationNeeded";
+      - Should act logic on numOfPosts in tandem with Dropdown's state;
+
+
+
+
+
+

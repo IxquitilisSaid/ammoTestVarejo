@@ -1,0 +1,58 @@
+.Product{
+  border: 1px solid lightgray;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.ImgWrap{
+  display: inline-flex;
+  width: 376px;
+  justify-content: space-between
+}
+
+.ImgWrap img{
+  width: 80px;
+  height: 80px;
+}
+
+.NameWrap{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+}
+
+.NameWrap p,
+.NameWrap h6{
+  margin: 0;
+  padding: 6px 0 0 0;
+  font-size: 15px;
+}
+
+.NameWrap p{
+  color: #676767;
+}
+
+.PriceWrap{
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 240px;
+  align-items: center;
+}
+
+.PriceWrap h6 {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+.PriceWrap>h6:first-child{
+  color: #838383;
+  font-size: 15px;
+}
+
+#Strike{
+  text-decoration: line-through;
+}

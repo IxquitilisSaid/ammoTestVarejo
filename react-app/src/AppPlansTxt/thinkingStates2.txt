@@ -1,0 +1,25 @@
+OBS: "->" means return
+     "=" means "is"
+     "=>" means "passes/passing"
+     ">>" means "to"
+     "$" means "recive"
+
+- Query => data object >> PageTitle && PostWrapper
+
+- Layout
+
+- Dropdown has initState { numDisplay: number = 1 }
+- Dropdown -> postQuantity={numOfPosts: number} >> PostWrapper
+
+- PostWrapper has initState { numProductShow: number = 1, error: boolean = false, products: array = [] }
+- PostWrapper maps num of Products && while loops to display Posts
+- PostWrapper -> productName={product.productName} && productEspName={product.espProductName} 
+  && productPrice={product.productPrice} && productImgs={product.productImgs} >> Post 
+
+- Post $ props from PostWrapper
+- Post props are {props.productName} / {props.espProductName} / {props.productPrice} / {props.productImgs}
+
+
+
+
+
